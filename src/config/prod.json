@@ -1,0 +1,10 @@
+{
+	"env": "prod",
+	"baseUrl": "https://kd8api.cnhnb.com",
+	"timeout": 5000,
+	"monkSecret": "utTAVgdkaoYWnqJ^l2E^Nq3Ca@7gQsWC",
+	"client": "shop",
+	"printPage": "/pages/order/index",
+	"QR_CODE": "https://kd8api.cnhnb.com/kd8-user/",
+	"img": "https://img.cnhnb.com/"
+}
