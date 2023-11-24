@@ -17,6 +17,7 @@
           </view>
           <!-- 内容 -->
           <view class="text">
+            <!-- eslint-disable-next-line  -->
             <slot><view v-html="option.content"></view></slot>
           </view>
         </view>
@@ -82,16 +83,16 @@ const defaultOption = {
   confirmText: "",
   cancelText: "",
   confirm: () => {},
-  cancel: () => {},
+  cancel: () => {}
 };
 
 export default {
   props: {
-    show: Boolean,
+    show: Boolean
   },
   data() {
     return {
-      option: {},
+      option: {}
     };
   },
   methods: {
@@ -103,7 +104,7 @@ export default {
       console.log(1);
       setTimeout(() => {
         const option = defaultOption;
-        Object.keys(opt).forEach((key) => {
+        Object.keys(opt).forEach(key => {
           if (opt[key] === false) return;
           option[key] = opt[key];
         });
@@ -126,22 +127,22 @@ export default {
       switch (this.option.type) {
         case "phone":
           uni.getPhoneNumber({
-            success: (e) => {
+            success: e => {
               this.confirmCallBack(e);
             },
-            fail: (res) => {
+            fail: res => {
               this.cancel(res);
-            },
+            }
           });
           break;
         case "idNumber":
           uni.getIDNumber({
-            success: (e) => {
+            success: e => {
               this.confirmCallBack(e);
             },
-            fail: (res) => {
+            fail: res => {
               this.cancel(res);
-            },
+            }
           });
           break;
         case "auth":
@@ -171,8 +172,8 @@ export default {
           typeof this.option.cancel === "function" &&
           this.option.cancel.call(this, e);
       });
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -11,7 +11,7 @@ export default {
     open() {
       this.$refs.modal.open({
         title: "隐私声明",
-        content: "创金合信基金管理有限公司（以下称“创金合信”或“我们”）...",
+        content: "XXXX有限公司（以下称“XXXX”或“我们”）...",
         cancelText: "拒绝",
         confirmText: "同意",
         confirm: () => {},

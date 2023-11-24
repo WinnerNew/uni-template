@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true,
+    node: true
   },
   extends: ["plugin:vue/essential", "standard", "plugin:prettier/recommended"],
   globals: {
@@ -12,16 +12,17 @@ module.exports = {
     getApp: "readonly",
     uni: "readonly",
     wx: "readonly",
-    my: "readonly",
+    my: "readonly"
   },
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: "module",
+    sourceType: "module"
   },
   plugins: ["vue"],
   rules: {
     "func-call-spacing": 1,
     "no-multiple-empty-lines": 1,
+    "vue/script-setup-uses-vars": "on"
     // 'no-debugger': process.env === 'development' ? 'off' : 'on'
-  },
+  }
 };
