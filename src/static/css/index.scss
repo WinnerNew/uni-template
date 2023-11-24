@@ -1,0 +1,14 @@
+/* u-parse 图片样式修改 */
+.undefined ::v-deep ._img{
+    display: inline-block;
+    width: 100%;
+}
+
+.theme_btn{
+    background: linear-gradient(146deg, #FFC66D 0%, #FF7E1F 100%);
+    border-radius: 50rpx;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

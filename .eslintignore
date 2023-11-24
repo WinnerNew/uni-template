@@ -1,2 +1,9 @@
-/public
-/src/untils
+/node_modules
+/.husky
+/.vscode
+/dist
+/src/static
+/src/utils/sensors
+/src/utils/mp-alipay-url-handler
+/src/components/l-f2
+
